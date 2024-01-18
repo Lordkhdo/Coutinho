@@ -1,0 +1,74 @@
+:root {
+  --orange-color: #f14e13;
+  --orange-light-color: #f79673;
+  --navbar-height: 80px;
+
+  --text-body: max(1.75rem, 1.75vw);
+  --text-heading: max(4rem, 4vw);
+
+  --col-gap: clamp(1.25rem, 3vw, 3rem);
+}
+
+@media (width <= 480px) {
+  :root {
+    --text-body: max(1.75rem, 1.75vw);
+    --text-heading: max(4rem, 4vw);
+
+    --col-gap: clamp(0.75rem, 3vw, 1rem);
+  }
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: var(--text-heading);
+  color: #333;
+  font-family: Poppins;
+  /* font-size: 67.5px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 60.75px */
+  letter-spacing: -4.725px;
+  text-transform: uppercase;
+}
+
+/* MAIN ELEMENTS */
+
+section {
+  width: calc(100vw - 2 * var(--col-gap));
+  padding: 0 var(--col-gap);
+}
+
+section:nth-of-type(1) {
+  padding-top: calc(2rem + var(--navbar-height));
+}
+
+section.full-height {
+  height: 100dvh;
+}
+
+/* Logo */
+
+.logo {
+  width: 24px;
+}
+
+/* Buttons */
+
+button {
+  background-color: var(--orange-color);
+  padding: 1rem var(--col-gap);
+
+  text-transform: uppercase;
+  color: #fff;
+
+  border-radius: 7px;
+
+  border: none;
+}
+
+button.secondary {
+  background: transparent;
+
+  color: #333;
+}
