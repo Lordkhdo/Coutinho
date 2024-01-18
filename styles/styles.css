@@ -1,0 +1,46 @@
+/* Spots */
+
+.spot {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  width: 1vw;
+
+  background-color: var(--orange-light-color);
+}
+
+.spot.left {
+  left: 0;
+}
+.spot.right {
+  right: 0;
+}
+
+/* Navbar */
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: var(--navbar-height);
+  padding: 0 calc(var(--col-gap) * 2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+
+  z-index: 998;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+
