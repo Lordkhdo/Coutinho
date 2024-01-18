@@ -1,0 +1,53 @@
+:root{
+    --color-white: #fff;
+    --color-white2: #f3f1f1;
+    --color-gray: #c3c3c3;
+    --color-dark1: #000000;
+    --color-dark2: #202020;
+    --color-dark3: #2c2c2c;
+    --color-dark4: #545454;
+    --color-dark5: #6c6c6c;
+    --color-dark6: #a5a5a5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.logoHeader{
+    width: 45px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    height: 3em;
+    box-shadow: 1px 1px 4px  var(--color-dark4);
+    padding: 0 10%;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: var(--color-dark5);
+    font-weight: 500; 
+    margin-left: 3em;   
+    transition: 1s;
+
+
+
+
+}
+.navigation a:hover{
+    color: var(--color-dark2);
+
+
+}
+.navigation a:first-child{
+    margin-left: 0;
+}
+.navigation{
+    display: block;
+    gap: 20px;
+}
