@@ -1,4 +1,4 @@
-/* Spots */
+/* Spots */left
 
 .spot {
   position: fixed;
@@ -20,10 +20,7 @@
 /* Navbar */
 
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+
 
   height: var(--navbar-height);
   padding: 0 calc(var(--col-gap) * 2);
@@ -32,10 +29,29 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background-color: #fff;
+  background-color: transparent;
   border-bottom: 1px solid #ddd;
 
   z-index: 998;
+  transition: 1s;
+}
+.header{
+  position: fixed;
+  top: -80px;
+  right: 0;
+  left: 0;
+  transition: 1s;
+}
+.muded{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 1s;
+  background-color: #fff;
+}
+.muded>div>img.logo{
+
 }
 
 header nav {
@@ -43,4 +59,14 @@ header nav {
   gap: 1rem;
 }
 
-
+.headsoon{
+  display: flex;
+  gap: 5px;
+}
+.headsoon>p{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -1px;
+}

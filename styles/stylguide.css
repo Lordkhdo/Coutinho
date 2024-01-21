@@ -25,13 +25,12 @@ body {
 
 h1 {
   font-size: var(--text-headingGab);
-  color: #333;
-  font-family: Poppins;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
   /* font-size: 67.5px; */
   font-style: normal;
-  font-weight: 400;
-  line-height: 90%; /* 60.75px */
-  letter-spacing: -4.725px;
+
+  letter-spacing: -2.725px;
   text-transform: uppercase;
 }
 
@@ -45,12 +44,18 @@ section {
 section:nth-of-type(1) {
   padding-top: calc(2rem + var(--navbar-height));
 }
-
-section.full-height {
-  height: 100vh;
-  width: 100vw;
+.first_section{
+background-image: url(../images/mainImgs/imagem_coutosolar_1.jpeg);
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
+section.full-height {
+  height:100vh;
+  width: 100vw;
+  margin-top: -80px;
 
+}
 /* Logo */
 
 .logo {
@@ -70,7 +75,10 @@ button {
 
   border: none;
 }
-
+.margingTop{
+  margin-top: 20px;
+  
+}
 button.secondary {
   background: transparent;
 
@@ -79,6 +87,7 @@ button.secondary {
 
 
 /* flex container main |||| first_section */
+
 
 .container{
   display: flex;
@@ -103,17 +112,16 @@ button.secondary {
 }
 .main_footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: end;
+  padding-right: 50px;
 }
 .main_footer> p{
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
+  color: white;
 }
-.main_footer> small{
-  font-weight: 100;
-  color: var(--gray-light-color);
-}
+
 /* second_section */
 
 .second_section{
