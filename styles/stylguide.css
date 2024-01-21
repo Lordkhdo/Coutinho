@@ -1,14 +1,17 @@
 :root {
   --orange-color: #f14e13;
   --orange-light-color: #f79673;
+  --gray-light-color: #636363;
   --navbar-height: 80px;
 
   --text-body: max(1.75rem, 1.75vw);
   --text-heading: max(4rem, 4vw);
-
+  --text-headingGab:max(3rem, 3vw);
   --col-gap: clamp(1.25rem, 3vw, 3rem);
 }
-
+body {
+   overflow-x: hidden;
+}
 @media (width <= 480px) {
   :root {
     --text-body: max(1.75rem, 1.75vw);
@@ -21,7 +24,7 @@
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: var(--text-heading);
+  font-size: var(--text-headingGab);
   color: #333;
   font-family: Poppins;
   /* font-size: 67.5px; */
@@ -44,7 +47,8 @@ section:nth-of-type(1) {
 }
 
 section.full-height {
-  height: 100dvh;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Logo */
@@ -71,4 +75,90 @@ button.secondary {
   background: transparent;
 
   color: #333;
+}
+
+
+/* flex container main |||| first_section */
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 34vw;
+}
+.left_aside_main{
+  flex: 2;
+}
+.main_center{
+  flex:3 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_center img{
+   height: 450px;  /* tamanho a ser modificado pra variavel */
+   border: 3px solid var(--orange-color);
+}
+.right_aside_main{
+  flex: 2;
+}
+.main_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.main_footer> p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.main_footer> small{
+  font-weight: 100;
+  color: var(--gray-light-color);
+}
+/* second_section */
+
+.second_section{
+  width: 100vw;
+  height: 100vh;
+  padding: 0 var(--col-gap);
+}
+.second_section> p{
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.header_second_section{
+display: flex;
+flex: 1;  
+}
+.main_content_second_section{
+  display: flex;
+  
+}
+.header_second_section> p{
+color: rgb(46, 46, 46);
+}
+.aside_left_second_section{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--navbar-height));  /* tamanho a ser modificado pra variavel */
+
+}
+.aside_left_second_section>img{
+
+
+height: 400px;  /* tamanho a ser modificado pra variavel */
+border: 3px solid var(--orange-color);
+}
+.aside_right_second_section{
+  flex: 1;
+  display: flex;
+  justify-content: end;
+
+}
+.aside_right_second_section> p{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  font-size: 1.9rem; /* tamanho a ser modificado pra variavel */
+  font-weight:500 ;
 }
