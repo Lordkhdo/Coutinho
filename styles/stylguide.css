@@ -45,9 +45,8 @@ section:nth-of-type(1) {
   padding-top: calc(2rem + var(--navbar-height));
 }
 .first_section{
-background-image: url(../images/mainImgs/imagem_coutosolar_1.jpeg);
+  background-image: url(../images/mainImgs/imagem_coutosolar.png);
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
-  background-position: center; /* Centraliza a imagem no fundo */
   background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
 section.full-height {
@@ -67,7 +66,7 @@ section.full-height {
 button {
   background-color: var(--orange-color);
   padding: 1rem var(--col-gap);
-
+  cursor: pointer;
   text-transform: uppercase;
   color: #fff;
 
@@ -81,7 +80,7 @@ button {
 }
 button.secondary {
   background: transparent;
-
+  cursor: pointer;
   color: #333;
 }
 
