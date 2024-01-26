@@ -45,9 +45,8 @@ section:nth-of-type(1) {
   padding-top: calc(2rem + var(--navbar-height));
 }
 .first_section{
-background-image: url(../images/mainImgs/imagem_coutosolar_1.jpeg);
+  background-image: url(../images/mainImgs/imagem_coutosolar.png);
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
-  background-position: center; /* Centraliza a imagem no fundo */
   background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
 section.full-height {
@@ -67,7 +66,7 @@ section.full-height {
 button {
   background-color: var(--orange-color);
   padding: 1rem var(--col-gap);
-
+  cursor: pointer;
   text-transform: uppercase;
   color: #fff;
 
@@ -81,7 +80,7 @@ button {
 }
 button.secondary {
   background: transparent;
-
+  cursor: pointer;
   color: #333;
 }
 
@@ -133,40 +132,8 @@ button.secondary {
   font-family: sans-serif;
   font-weight: 100;
 }
-.header_second_section{
-display: flex;
-flex: 1;  
-}
+
 .main_content_second_section{
   display: flex;
   
-}
-.header_second_section> p{
-color: rgb(46, 46, 46);
-}
-.aside_left_second_section{
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - var(--navbar-height));  /* tamanho a ser modificado pra variavel */
-
-}
-.aside_left_second_section>img{
-
-
-height: 400px;  /* tamanho a ser modificado pra variavel */
-border: 3px solid var(--orange-color);
-}
-.aside_right_second_section{
-  flex: 1;
-  display: flex;
-  justify-content: end;
-
-}
-.aside_right_second_section> p{
-  font-family: 'Poppins', sans-serif;
-  margin-top: 30px;
-  font-size: 1.9rem; /* tamanho a ser modificado pra variavel */
-  font-weight:500 ;
 }
