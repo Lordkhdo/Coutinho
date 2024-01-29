@@ -36,3 +36,48 @@ const updateHeader = () => {
 };
 
 window.addEventListener('wheel', updateScroll);
+
+        // slider-----------------------
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const slideItems = document.querySelectorAll('.slide-item');
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
+
+let counter = 0;
+const size = slideItems[0].clientWidth;
+
+function nextSlide() {
+  if (counter >= slideItems.length - 1) {
+    counter = 0; // Volta para o início
+  } else {
+    counter++;
+  }
+  moveSlide();
+}
+
+function prevSlide() {
+  if (counter <= 0) {
+    counter = slideItems.length - 1; // Vai para o final
+  } else {
+    counter--;
+  }
+  moveSlide();
+}
+
+function moveSlide() {
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Função para mover o slide automaticamente a cada 5 segundos
+function autoSlide() {
+  setInterval(() => {
+    nextSlide();
+  }, 19000); // 19000 milissegundos = 19 segundos
+}
+
+autoSlide();
