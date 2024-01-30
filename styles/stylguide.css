@@ -220,7 +220,10 @@ a{
   text-decoration: none;
   color: #000000;
 }
-.third_section{
+
+ /* third_section */
+
+ .third_section{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -274,3 +277,9 @@ p.third_section{
   gap: 8px;
   border-radius: 40px;
 }
+ /* third_section */
+
+ /* four_section */
+ .four_section{
+  height: 100vh;
+ }
