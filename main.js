@@ -4,7 +4,7 @@ let ImageLogo = document.getElementById("ImageLogo");
 let nameImageLogo = document.getElementById("namelogo");
 let butonHeader = document.querySelector('.clicked');
 const evento = {
-  deltaY:900,
+  deltaY:700,
 }
 
 const updateScroll = (event) => {
@@ -18,12 +18,15 @@ const updateScroll = (event) => {
     // Verifica se atingiu a base da página
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     scrollMouse = Math.min(scrollMouse, maxScroll);
+    console.log('updated'+ scrollMouse);
+
 
     updateHeader();
 };
-butonHeader.addEventListener('click',()=>{updateScroll(evento)})
+
+
 const updateHeader = () => {
-    if (scrollMouse >= 600) {
+    if (scrollMouse >= 500) {
         header.classList.add("header");
         ImageLogo.src = 'images/fotologo3 1.png';
         nameImageLogo.textContent = 'COUTO SOLAR';
@@ -41,6 +44,7 @@ const updateHeader = () => {
 };
 
 window.addEventListener('wheel', updateScroll);
+butonHeader.addEventListener('click',()=>{updateScroll(evento)})
 
         // slider-----------------------
 
