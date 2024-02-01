@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="'width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/styles/normalize.css" />
-    <link rel="stylesheet" href="/styles/stylguide.css" />
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/stylguide.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
 
-    <link rel="icon" href="images\fotologo3.jpeg" />
+    <link rel="icon" href="images/fotologo3.jpeg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
         <img
         class="logo"
-        src="images\fotologo3 1.png"
+        src="images/fotologo3_1.png"
         alt="Couto Solar logo"
         id="ImageLogo"
       />
@@ -77,22 +77,31 @@
         <div class="carousel-slide">
 
           <div class="slide-item">
-            <img src="images\carousel\olinda.png" width="100%" alt="">
+            <div class="Responsive_imagem"></div>
+            <img src="images\carousel\olinda.png" id="img1" alt="">
+            <img src="images\carousel\olinda(mobile).png" id="imge1" alt="">
+
             <h3>Olinda</h3>
             <p>Sustentabilidade brilha através dos painéis solares.</p>
           </div>
           <div class="slide-item">
-            <img src="images\carousel\itamaraca.png"width="100%" alt="">
+            <img src="images\carousel\itamaraca.png" id="img2" alt="">
+            <img src="images\carousel\itamaraca(mobile).png" id="imge2" alt="">
+
             <h3>Itamaraca</h3>
             <p>Fotovoltaicos: convertendo luz em eletricidade renovável.</p>
           </div>
           <div class="slide-item">
-            <img src="images\carousel\gaibu.png" width="100%" alt="">
+            <img src="images\carousel\gaibu.png" id="img3"  alt="">
+            <img src="images\carousel\gaibu(mobile).png" id="imge3" alt="">
+
             <h3>Gaibu</h3>
             <p>Raios solares transformam luz em energia</p>
           </div>
           <div class="slide-item">
-            <img src="images\carousel\carpina.png" width="100%" alt="">
+            <img src="images\carousel\carpina.png" id="img4"  alt="">
+            <img src="images\carousel\carpina(mobile).png" id="imge4" alt="">
+
             <h3>Carpina</h3>
             <p>O sol alimenta o futuro sustentável..</p>
           </div>
@@ -166,8 +175,11 @@
         <h3>Reduza sua conta de <br> energia em ate 95%</h3>
       </div>
       <div class="main_four_section">
-        <img src="images\four_section\AT_coutoSolar.png" alt="" height="200px">
-        <img src="images\four_section\DP_coutoSolar.png" alt="" height="200px" >
+        <img src="images\four_section\AT_coutoSolar.png" id="img5" height="200px">
+        <img src="images\four_section\DP_coutoSolar.png" id="img6" alt="" height="200px" >
+        <img src="images\four_section\AT_couto(movel).png" id="imge5" alt="" >
+        <img src="images\four_section\DP_couto(movel).png" id="imge6" alt="" >
+
       </div>
       <div class="buttons_four_section">
         <button class="wpp"><img src="images\svgS\saiba_mais\Vector.png" alt="">FAÇA SEU ORÇAMENTO</button>
@@ -181,23 +193,20 @@
       <form action="/processar-formulario" method="post">
         
         <div class="form-group">
-          <input class="form-control"  type="email" id="email" name="email" required><br>
-            <label for="email">Email</label><br>
+          <input placeholder="email" class="form-control"  type="email" id="email" name="email" required><br>
         </div>
 
         <div class="form-group">
-          <input class="form-control" type="text" id="nome" name="nome" required><br>
-            <label  for="nome">Nome</label><br>
+          <input placeholder="nome" class="form-control" type="text" id="nome" name="nome" required><br>
         </div>
 
         <div class="form-group">
-          <input class="form-control" type="text" id="cidade" name="cidade" required><br>
-            <label  for="cidade">Cidade</label><br>
+          <input placeholder="cidade" class="form-control" type="text" id="cidade" name="cidade" required><br>
+          
         </div class="form-group">
 
         <div class="form-group">
-          <input class="form-control" type="tel" id="telefone" name="telefone" required><br>
-            <label for="telefone">Telefone</label><br>
+          <input placeholder="telefone" class="form-control" type="tel" id="telefone" name="telefone" required><br>
         </div class="form-group">
 
         <div class="form-group">
@@ -216,6 +225,6 @@
     </form>
 
     </div>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

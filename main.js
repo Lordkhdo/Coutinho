@@ -26,7 +26,7 @@ const updateScroll = (event) => {
 const updateHeader = () => {
     if (scrollMouse >= 500) {
         header.classList.add("header");
-        ImageLogo.src = 'images/fotologo3 1.png';
+        ImageLogo.src = 'images/fotologo3_1.png';
         nameImageLogo.textContent = 'COUTO SOLAR';
 
         if (scrollMouse >= 700) {
@@ -89,3 +89,56 @@ function autoSlide() {
 }
 
 autoSlide();
+
+let imagem1 = document.querySelector('#img1')
+let imagem2 = document.querySelector('#img2')
+let imagem3 = document.querySelector('#img3')
+let imagem4 = document.querySelector('#img4')
+
+
+// troca de imagem para a responsividade
+console.log(window.innerWidth);
+
+
+if (window.innerWidth <= 1199) {
+  console.log('object');
+  document.getElementById('img1').style.display = 'none';
+  document.getElementById('img2').style.display = 'none';
+  document.getElementById('img3').style.display = 'none';
+  document.getElementById('img4').style.display = 'none';
+  document.getElementById('img5').style.display = 'none';
+  document.getElementById('img6').style.display = 'none';
+
+
+
+  document.getElementById('imge1').style.display = 'block';
+  document.getElementById('imge2').style.display = 'block';
+  document.getElementById('imge3').style.display = 'block';
+  document.getElementById('imge4').style.display = 'block';
+  document.getElementById('imge5').style.display = 'block';
+  document.getElementById('imge6').style.display = 'block';
+
+
+} else {
+
+  console.log('object22');
+
+  document.getElementById('img1').style.display = 'block';
+  document.getElementById('img2').style.display = 'block';
+  document.getElementById('img3').style.display = 'block';
+  document.getElementById('img4').style.display = 'block';
+  document.getElementById('img5').style.display = 'block';
+  document.getElementById('img6').style.display = 'block';
+
+
+
+  document.getElementById('imge1').style.display = 'none';
+  document.getElementById('imge2').style.display = 'none';
+  document.getElementById('imge3').style.display = 'none';
+  document.getElementById('imge4').style.display = 'none';
+  document.getElementById('imge5').style.display = 'none';
+  document.getElementById('imge6').style.display = 'none';
+
+
+
+}

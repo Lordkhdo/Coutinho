@@ -9,7 +9,7 @@
   --text-headingGab:max(3rem, 3vw);
   --col-gap: clamp(1.25rem, 3vw, 3rem);
 }
-body {
+body,html {
    overflow-x: hidden;
 }
 @media (width <= 480px) {
@@ -123,7 +123,30 @@ button.secondary {
   font-weight: 700;
   color: white;
 }
-
+@media screen and (max-width: 1199px) {
+  .first_section{
+    background-color: #000000;
+  }
+  .main_footer>p{
+    display: none;
+  }
+  .main_center,.right_aside_main{
+    display: none;
+  }
+    p#namelogo{
+      font-size:.8rem;
+      
+    }
+    .headsoon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .secondary {
+      color: #000000;
+      font-family: 'poppins';
+    }
+}
 
 
 
@@ -154,6 +177,12 @@ button.secondary {
   height: 100%; /* Altura desejada do carousel */
   position: relative;
   overflow: hidden;
+}
+.slide-item>img{
+  width: 100%;
+}
+.Responsive_imagem{
+  display: none;
 }
 
 .carousel-slide {
@@ -188,6 +217,12 @@ button.secondary {
   border-radius: 3px;
   font-size: .65em;
 }
+@media screen and (max-width:1199px) {
+  .slide-item>p{
+    font-size: 0.55em;
+  }
+}
+
 .slide-item>h3{
   position: absolute;
   top: 75%;
@@ -235,6 +270,7 @@ a{
   flex-direction: column;
   height: 100%;
 }
+
 h2.third_section{
   color: #F14E13;
   margin-top: 150px;
@@ -275,6 +311,12 @@ p.third_section{
   display: flex;
   margin-bottom: 50px;
 }
+@media screen and (max-width:1199px) {
+  .father_boxe{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
 .wpp{
   margin-top: 20px;
   display: flex;
@@ -306,13 +348,22 @@ text-align: center;
   gap: 50px;
   margin-top: 75px;
 }
+@media screen and (max-width:1199px) {
+  .main_four_section{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .fifth_section{
+    margin-top: 300px;
+  }
+}
 .buttons_four_section{
   display: flex; 
   align-items: center;
   justify-content: center;
   gap: 50px;
   margin-top: 75px;
-  
+  margin-bottom: 200px;
 }
 .buttons_four_section> button{
   border-radius: 80px;
@@ -353,7 +404,9 @@ text-align: center;
   position: relative;
   width: 350px;
 }
-
+.form-group:not(:first-of-type){
+  margin-top: 1rem;
+}
 .form-control {
   width: 100%;
   padding: 10px;
