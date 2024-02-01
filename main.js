@@ -8,7 +8,6 @@ const evento = {
 }
 
 const updateScroll = (event) => {
-  console.log('updated'+ event.deltaY);
     // Atualiza o valor acumulado do scroll
     scrollMouse += event.deltaY;
 
@@ -18,7 +17,6 @@ const updateScroll = (event) => {
     // Verifica se atingiu a base da página
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     scrollMouse = Math.min(scrollMouse, maxScroll);
-    console.log('updated'+ scrollMouse);
 
 
     updateHeader();
