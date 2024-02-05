@@ -441,3 +441,31 @@ label {
   width: 100%;
 }
 /* faidsaoijdnaiow */
+
+
+footer{
+  height: 28vh;
+}
+.mainFooter{
+  display: flex;
+  margin: 0 50px;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+.child_footer{
+   padding: 50px;
+    width: 380px;
+    height: 100%;
+}
+.child_footer> p{
+  padding-top: 20px;
+}
+.apagado{
+  color: #636363;
+}
+.imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

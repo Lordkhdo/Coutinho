@@ -198,14 +198,14 @@
       <h2><span class="colored">Reduza sua  conta de <br> energia  em até 95%</h2>
       <p>Preencha o formulário a seguir.</p>
         <!-- formulario -->
-      <form action="/processar-formulario" method="post">
+      <form action='https://formspree.io/f/myyredez' method="post">
         
         <div class="form-group">
           <input placeholder="email" class="form-control"  type="email" id="email" name="email" required><br>
         </div>
 
         <div class="form-group">
-          <input placeholder="nome" class="form-control" type="text" id="nome" name="nome" required><br>
+          <input placeholder="nome" class="form-control" type="_subject" id="name" name="name" required><br>
         </div>
 
         <div class="form-group">
@@ -230,9 +230,33 @@
         <div>
             <button class="wpp SubmitGroup" type="submit">Quero economizar</button>
         </div>
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
     </form>
 
     </div>
+    <footer>
+      <div class="mainFooter">
+        <div class="child_footer">
+          <div class="imgs">
+            <img src="images\fotologoBlack.svg" alt="">
+            <img src="images\CoutoSolarC.svg" alt="">
+          </div>
+          <p class="apagado">Renovando seus sonhos
+            com energia e evitando custos</p>
+        </div>
+
+        <div class="child_footer">
+            <span>Contato</span>
+          <p class="apagado">Coutosolar@gmail.com</p>
+          <p class="apagado">(81) 9-8614-6963</p>
+
+        </div>
+      </div>
+
+
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
