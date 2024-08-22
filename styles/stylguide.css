@@ -419,6 +419,11 @@ text-align: center;
 .form-control:focus {
   outline: none;
   border-color: #007bff; /* Cor de destaque ao focar */
+
+}
+
+#tipodeinstalação:hover{
+  cursor: pointer;
 }
 
 label {
@@ -468,4 +473,139 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.six_section{
+  height: 720px;
+
+}
+
+.card{
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  background-color: #F9F9F9;
+  height: 630px;
+  width: 368px;
+  border-radius: 20px;
+  margin-top: 60px;
+  display: flex;
+  text-align: center;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: px;
+
+}
+.cardBlack{
+  box-shadow:0px 4px 22px rgb(0 0 0 / 17%);
+  background-color: #181C28;
+  color: white;
+  height: 630px;
+  width: 368px;
+  border-radius: 20px;
+  margin-top: 60px;
+  display: flex;
+  text-align: center;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: px;
+  
+}
+
+.container.six{
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 800px;
+}
+.Boxe_six>h2{
+margin-bottom: 25px;
+margin-top: 25px;
+}
+.Boxe_six>p{
+  width: 313px;
+  color: #767D8E;
+}
+.arrow{
+  width: 257px;
+  height: 0;
+  border: 1px  solid #9a9ca18e;
+  display: block;
+  margin: 0 auto;
+  margin-top:20px ;
+}
+.price{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+.price>span{
+  display: flex;
+  color : #767D8E;
+  gap: 10px;
+}
+.mes{
+  color: #9A9CA1;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.Greenbuton{
+  background-color: #2B9B1F;
+}
+
+.testimony{
+  height: 800px;
+  width: 100%;
+  margin-top: 100px;
+}
+.centralize{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description{
+  background-color: #9b1f1f;
+  height: 600px;
+  width: 45%;
+  padding-left: 40px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.videos{
+  background-color: #2B9B1F;
+  height: 600px;
+  width: 55%;
+  padding-right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+
+
+
+
+
+
+
+
+@media  (max-width: 1124px) {
+  .six_section{
+    height: 1300px;
+  } 
+}
+
+@media  (max-width: 755px) {
+  .six_section{
+    height: 2000px;
+  } 
 }

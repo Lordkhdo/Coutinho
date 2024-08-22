@@ -85,7 +85,7 @@ prevBtn.addEventListener('click', prevSlide);
 function autoSlide() {
   setInterval(() => {
     nextSlide();
-  }, 19000); // 19000 milissegundos = 19 segundos
+  }, 10000); // 19000 milissegundos = 19 segundos
 }
 
 autoSlide();
@@ -97,48 +97,20 @@ let imagem4 = document.querySelector('#img4')
 
 
 // troca de imagem para a responsividade
-console.log(window.innerWidth);
 
 
 if (window.innerWidth <= 1199) {
-  console.log('object');
-  document.getElementById('img1').style.display = 'none';
-  document.getElementById('img2').style.display = 'none';
-  document.getElementById('img3').style.display = 'none';
-  document.getElementById('img4').style.display = 'none';
-  document.getElementById('img5').style.display = 'none';
-  document.getElementById('img6').style.display = 'none';
+  const imgs = [
+    'img1', 'img2', 'img3', 'img4', 'img5', 'img6'
+  ].map(id => document.getElementById(id));
+  imgs.forEach(img => { img.style.display = 'none'; });
 
-
-
-  document.getElementById('imge1').style.display = 'block';
-  document.getElementById('imge2').style.display = 'block';
-  document.getElementById('imge3').style.display = 'block';
-  document.getElementById('imge4').style.display = 'block';
-  document.getElementById('imge5').style.display = 'block';
-  document.getElementById('imge6').style.display = 'block';
-
+  const imges = [
+    'imge1', 'imge2', 'imge3', 'imge4', 'imge5', 'imge6'
+  ].map(id => document.getElementById(id));
+  imges.forEach(img => { img.style.display = 'block'; });
 
 } else {
-
-  console.log('object22');
-
-  document.getElementById('img1').style.display = 'block';
-  document.getElementById('img2').style.display = 'block';
-  document.getElementById('img3').style.display = 'block';
-  document.getElementById('img4').style.display = 'block';
-  document.getElementById('img5').style.display = 'block';
-  document.getElementById('img6').style.display = 'block';
-
-
-
-  document.getElementById('imge1').style.display = 'none';
-  document.getElementById('imge2').style.display = 'none';
-  document.getElementById('imge3').style.display = 'none';
-  document.getElementById('imge4').style.display = 'none';
-  document.getElementById('imge5').style.display = 'none';
-  document.getElementById('imge6').style.display = 'none';
-
-
-
+  ;['img1', 'img2', 'img3', 'img4', 'img5', 'img6'].forEach(id => document.getElementById(id).style.display = 'block');
+  ;['imge1', 'imge2', 'imge3', 'imge4', 'imge5', 'imge6'].forEach(id => document.getElementById(id).style.display = 'none');
 }
